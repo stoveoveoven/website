@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steves shenanigans</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    /* Background */
+    body {
+        background-image: linear-gradient(to right, rgba(199,199,255,0.67) 0%, rgba(0,212,255,0.20) 100%),url('images/topography.svg');
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">steven shao</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="home-page">about</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experience" class="navbar__links" id="home-page">experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="home-page">projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <img src="images\me.jpg" alt="" class="me">
+            </div>
+            <div class="main__content">
+                <header class="about__header"><h2>Hi, I'm Steven!</h2></header>
+                <h3>
+                    Welcome to my website!
+                    I'm currently a second-year Computer Engineering student at the University of British Columbia. <br><br>
+                    I'm looking for Summer 2022 (May-Aug) internship opportunities! 
+                    Feel free to reach out through email (stoven@student.ubc.ca)
+                    or <a href="stoven@student.ubc.ca">LinkedIn</a> to chat!
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- Experience Section -->
+    <div class="timeline" id="experience">
+        <h1>Experience</h1>
+    
+        <div class="container right">
+            <div class="content">
+                <h2>Oct 2020 - Sept 2021</h2>
+                <h3>Hillhouse Education</h3>
+                <h4>Academic Tutor</h4>
+                <p>• Includes one-on-one private lessons and group lessons of up to three students at a time
+                    • Students vary from grade 3 to grade 12
+                    • Main subjects include Math, English, Physics</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>Jun 2020 - Sept 2020</h2>
+                <h3>Electronic Arts (EA)</h3>
+                <h4>Development Support</h4>
+                <p>• Maintained the Quality Assurance pipeline from discovery through a fix to regression verification
+                    • Created and followed Test Plans and Verifications
+                    • Provided Qualitative feedback regarding the product
+                    • Followed up with development and testing partners to ensure bugs are being logged and resolved</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="services" id="projects">
+        <h1>Projects</h1>
+        <div class="services__wrapper">
+            <a class="services__card" href = "https://github.com/stoveoveoven/scalping" target="_blank">
+                <h2>Best Buy Autocheckout</h2>
+                <p>(broken)</p>
+            </a>  
+            <a class="services__card" href = "https://github.com/stoveoveoven/scraping-icbc" target="_blank">
+                <h2>EZ ICBC N test booking</h2>
+                <p>(broken)</p>
+            </a>
+            <a class="services__card" href = "https://github.com/stoveoveoven" target="_blank">
+                <h2>Website</h2>
+                <p>You're looking at it</p>
+            </a>
+            <a class="services__card" href = "https://github.com/stoveoveoven/circuit-design-with-verilog" target="_blank">
+                <h2>Circuit Design with Verilog</h2>
+                <p>(school)</p>
+            </a>
+            <a class="services__card" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <h2>Document Analysis tool</h2>
+                <p>(school)</p>
+            </a>
+            <a class="services__card" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <h2>Email Analysis with Graphs</h2>
+                <p>(school)</p>
+            </a>
+            <a class="services__card" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <h2>Wikipedia Mediator</h2>
+                <p>(school)</p>
+            </a>
+            <a class="services__card" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <h2>WIP</h2>
+                <p>WIP</p>
+            </a>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
