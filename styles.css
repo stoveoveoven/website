@@ -15,7 +15,7 @@ html,body
 
 
 .navbar {
-    background: #d3d3d3;    
+    background: #be5e5e;    
     height: 80;
     display: flex;
     justify-content: center;
@@ -37,18 +37,21 @@ html,body
     padding: 0 50px;
 }
 
-#navbar__logo {
-    background-color: #ffffff;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.navbar__logo {
+    color: #fff;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    width: 200px;
     text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
     font-size: 2rem;
+}
+
+.navbar__logo:hover {
+    color: #70c3fa;
+    transition: all 0.3s ease;
 }
 
 .navbar__menu {
@@ -72,6 +75,26 @@ html,body
     transition: all 0.3s ease;
 }
 
+.navbar__links:hover {
+    color: #70c3fa;
+    transition: all 0.3s ease;
+}
+
+.navbar__icon {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.navbar__icon:hover {
+    color: #70c3fa;
+    transition: all 0.3s ease;
+}
+
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -80,7 +103,7 @@ html,body
     width: 100%;
 }
 
-.button {
+/* .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,17 +119,7 @@ html,body
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     color: #fff;
     transition: all 0.3s ease;
-}
-
-.navbar__links:hover {
-    color: #70c3fa;
-    transition: all 0.3s ease;
-}
-
-.navbar__logo:hover {
-    color: #70c3fa;
-    transition: all 0.3s ease;
-}
+} */
 
 body{
     background-color: #DFDBE5;
@@ -329,9 +342,6 @@ body{
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
     font-size: 2.5rem;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
 }
 
 .services__wrapper {
@@ -404,7 +414,7 @@ body{
     box-shadow: 0px 0px 15px #888888;
 }
 .services__card:nth-child(3) {
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ), url('images/icbc.jpg') no-repeat center center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ), url('images/me.jpg') no-repeat center center;
     background-size: cover;
     text-decoration: none;
     box-shadow: 0px 0px 15px #888888;
@@ -444,11 +454,18 @@ body{
     .services__wrapper {
         grid-template-columns: 1fr 1fr;
     }
+
+    .services {
+        margin-top: 750px;
+    }
 }
   
 @media screen and (max-width: 768px) {
     .services__wrapper {
         grid-template-columns: 1fr;
+    }
+    .services {
+        margin-top: 1600px;
     }
 }
   
