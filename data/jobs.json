@@ -1,0 +1,32 @@
+{
+  "companies": [
+    {
+      "company": "Electronic Arts",
+      "startDate": "Jun 2020",
+      "endDate": "Sept 2020",
+      "jobTitle": "Development Support",
+      "description": [
+        "Performed ad-hoc, accessibility, destructive, stability, shelf, alpha/beta checklist testing, regression, and followed up on NMI tickets.",
+        "Led teams of up to 22 testers to perform stability testing.",
+        "Prioritized concise communication with the QA and development teams, ensuring bugs were logged and resolved.",
+        "Reproduced and followed up on older tickets, resulting in over 80% additionally resolved.",
+        "Wrote cohesive bug reports, attended meetings with other project teams, and monitored team channels for communication."
+      ]
+    },
+    {
+      "company": "Ensemble Systems",
+      "startDate": "May 2022",
+      "endDate": "Dec 2022",
+      "jobTitle": "Software Developer",
+      "description": [
+        "Improved the company’s website user experience by implementing a responsive portfolio page using React, React Router, and Redux.",
+        "Reduced company website load times by 30% by serving images in webp format.",
+        "Led development for a multimedia player using React, Chakra UI Library, and NodeJS.",
+        "Automated file upload to AWS S3 and cache invalidation with AWS Cloudfront by designing an execution script using NodeJS, coordinating with the DevOps team.",
+        "Took initiative in researching and creating a proposal to implement OAuth authentication with AWS Cognito, successfully incorporating the prototype into the MVP release.",
+        "Wrote unit, integration, and E2E tests with Jest and Cypress, achieving 90% code coverage.",
+        "Maintained a mock API to be used during development of media apps using NodeJS, ExpressJS, and GraphQL."
+      ]
+    }
+  ]
+}
