@@ -6,6 +6,15 @@ export type ExperienceProps = {
   description: string[];
 };
 
-export type Experiences = {
+export type ExperienceList = {
   companies: [ExperienceProps];
+};
+
+export type ProjectProps = {
+  id: string;
+  href: string;
+  description: string[];
+};
+export type ProjectList = {
+  projects: [ProjectProps];
 };

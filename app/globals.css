@@ -17,10 +17,5 @@
 }
 
 body {
-  background-image: linear-gradient(
-      to right,
-      rgba(199, 199, 255, 0.3) 0%,
-      rgba(0, 212, 255, 0.2) 100%
-    ),
-    url("../assets/topography.svg");
+  background-color: antiquewhite;
 }

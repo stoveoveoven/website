@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": "BestBuy Autocheckout Script",
+      "href": "https://github.com/stoveoveoven/scalping",
+      "description": "Basic web scraping script used to automate much of BestBuy's checkout, originally used to purchase a graphics card in 2020"
+    },
+    {
+      "id": "icbc",
+      "href": "https://github.com/stoveoveoven/scraping-icbc",
+      "description": "EZ ICBC N test booking"
+    },
+    {
+      "id": "website",
+      "href": "https://stoveoveoven.github.io",
+      "description": "Website"
+    },
+    {
+      "id": "verilog",
+      "href": "https://github.com/stoveoveoven/circuit-design-with-verilog",
+      "description": "Circuit Design with Verilog"
+    },
+    {
+      "id": "mp1",
+      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "Document Analysis tool"
+    },
+    {
+      "id": "mp2",
+      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "Email Analysis with Graphs"
+    },
+    {
+      "id": "mp3",
+      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "Wikipedia Mediator"
+    },
+    {
+      "id": "WIP",
+      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "WIP"
+    }
+  ]
+}
