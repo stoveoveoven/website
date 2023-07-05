@@ -13,7 +13,7 @@ export type ExperienceList = {
 export type ProjectProps = {
   id: string;
   href: string;
-  description: string[];
+  description: string;
 };
 export type ProjectList = {
   projects: [ProjectProps];

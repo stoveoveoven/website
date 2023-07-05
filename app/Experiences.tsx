@@ -6,7 +6,7 @@ import jobs from "../data/jobs.json";
 export const Experiences = () => {
   const experiences: ExperienceList = JSON.parse(JSON.stringify(jobs));
   return (
-    <div>
+    <div className="w-[1200px]">
       {experiences.companies.map((experience) => {
         return (
           <Experience
