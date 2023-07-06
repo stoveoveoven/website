@@ -1,44 +1,52 @@
 {
   "projects": [
     {
-      "id": "BestBuy Autocheckout Script",
+      "id": "BestBuy Auto Checkout Script",
       "href": "https://github.com/stoveoveoven/scalping",
-      "description": "Basic web scraping script used to automate much of BestBuys checkout, originally used to purchase a graphics card in 2020"
+      "description": "Basic web scraping script used to automate most of BestBuys checkout.",
+      "backgroundImage": ""
     },
     {
-      "id": "icbc",
+      "id": "ICBC Auto Booking Script",
       "href": "https://github.com/stoveoveoven/scraping-icbc",
-      "description": "EZ ICBC N test booking"
+      "description": "Basic web scraping script used to automate getting to the booking page on ICBC's site.",
+      "backgroundImage": ""
     },
     {
-      "id": "website",
+      "id": "Personal Website",
       "href": "https://stoveoveoven.github.io",
-      "description": "Website"
+      "description": "Personal website used to display and host all projects.",
+      "backgroundImage": ""
     },
     {
-      "id": "verilog",
+      "id": "Circuit Design with Verilog",
       "href": "https://github.com/stoveoveoven/circuit-design-with-verilog",
-      "description": "Circuit Design with Verilog"
+      "description": "Code used for the completion of CPEN 211.",
+      "backgroundImage": ""
     },
     {
-      "id": "mp1",
+      "id": "Document Analysis Tool",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Document Analysis tool"
+      "description": "Plagiarism Checker created in CPEN 221.",
+      "backgroundImage": ""
     },
     {
-      "id": "mp2",
+      "id": "Email Analysis",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Email Analysis with Graphs"
+      "description": "Using Graphs to visualize and represent the network of emails in a large organization.",
+      "backgroundImage": ""
     },
     {
-      "id": "mp3",
+      "id": "Wikipedia Mediator",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Wikipedia Mediator"
+      "description": "Using the Wikipedia Mediator API to find the shortest path between two Wikipedia Articles",
+      "backgroundImage": ""
     },
     {
       "id": "WIP",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "WIP"
+      "description": "WIP",
+      "backgroundImage": ""
     }
   ]
 }

@@ -14,6 +14,7 @@ export type ProjectProps = {
   id: string;
   href: string;
   description: string;
+  backgroundImage: string;
 };
 export type ProjectList = {
   projects: [ProjectProps];
