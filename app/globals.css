@@ -16,6 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../public/fonts/RobotoMono.ttf");
+}
+
 body {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: #d5cede;
+  background-image: url("../public/topography.svg");
 }

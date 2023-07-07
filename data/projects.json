@@ -9,7 +9,7 @@
     {
       "id": "ICBC Auto Booking Script",
       "href": "https://github.com/stoveoveoven/scraping-icbc",
-      "description": "Basic web scraping script used to automate getting to the booking page on ICBC's site.",
+      "description": "Basic web scraping script to automate the booking page on ICBC.",
       "backgroundImage": ""
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": "Email Analysis",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Using Graphs to visualize and represent the network of emails in a large organization.",
+      "description": "Using Graphs to model the network of emails in a large organization.",
       "backgroundImage": ""
     },
     {
       "id": "Wikipedia Mediator",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Using the Wikipedia Mediator API to find the shortest path between two Wikipedia Articles",
+      "description": "Using the Wikipedia Mediator API to find shortest path between two articles.",
       "backgroundImage": ""
     },
     {

@@ -15,6 +15,7 @@ export const Experiences = () => {
             endDate={experience.endDate}
             jobTitle={experience.jobTitle}
             description={experience.description}
+            logo={experience.logo}
             key={experience.company}
           />
         );

@@ -16,6 +16,7 @@ export const Projects = () => {
             id={project.id}
             href={project.href}
             description={project.description}
+            backgroundImage={project.backgroundImage}
           />
         );
       })}

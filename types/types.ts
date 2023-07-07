@@ -3,7 +3,8 @@ export type ExperienceProps = {
   startDate: string;
   endDate: string;
   jobTitle: string;
-  description: string[];
+  description: string;
+  logo: string;
 };
 
 export type ExperienceList = {

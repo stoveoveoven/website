@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { ExperienceProps } from "@/types/types";
+import Image from "next/image";
 
 export const Experience = (props: ExperienceProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  const animation = isHovered
-    ? "bg-blue-600 rotate-45"
-    : "bg-red-500 -rotate-45";
+  const animation = isHovered ? "rotate-45" : "-rotate-45";
 
   return (
     <div
@@ -16,21 +15,26 @@ export const Experience = (props: ExperienceProps) => {
         setIsHovered(false);
       }}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center cursor-pointer">
         <div className="flex relative">
-          <div className="w-3 bg-gray-300"></div>
+          <div className="w-3 bg-gray-500"></div>
           <label
             htmlFor="a"
-            className={` w-8 h-8 absolute top-[30px] left-[-10px] z-10 ease-in-out duration-300 ${animation}`}
+            className={` w-8 h-8 absolute top-[30px] left-[-10px] z-10 ease-in-out duration-300 bg-white border-2 border-black ${animation}`}
           ></label>
         </div>
-        <div className="m-8 w-10/12">
-          <div>
-            {props.startDate} - {props.endDate}
+        <div className="m-8 w-10/12 flex justify-between items-center">
+          <div className="flex flex-col gap-2">
+            <p className="text-sm  p-1 bg-white w-fit">
+              {props.startDate} - {props.endDate}
+            </p>
+            <div className="text-5xl font-bold uppercase">{props.company}</div>
+            <div className="text-2xl font-bold uppercase">{props.jobTitle}</div>
+            <div className="text-xl">{props.description}</div>
           </div>
-          <div>{props.jobTitle}</div>
-          <div>{props.company}</div>
-          <div>{props.description}</div>
+          <div className="relative w-[80px] h-[80px] shadow-xl ">
+            <Image src={props.logo} alt={""} fill className="rounded-xl" />
+          </div>
         </div>
       </div>
     </div>

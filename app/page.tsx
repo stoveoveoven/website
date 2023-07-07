@@ -1,31 +1,65 @@
 import Image from "next/image";
-import me from "../assets/me.jpeg";
 
 import { Heading } from "./Heading";
 import { Projects } from "./Projects";
 import { Experiences } from "./Experiences";
+import { Link } from "./Link";
+import aboutData from "../data/about.json";
 
 export default function Home() {
+  const about = JSON.parse(JSON.stringify(aboutData));
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 w-[1200px] m-auto gap-[100px]">
+    <main
+      className="flex min-h-screen flex-col items-center justify-center p-24 w-[1200px] m-auto gap-[100px] 
+                 font-mono text-gray-500"
+    >
       {/* about me */}
 
-      <div className="flex flex-col">
-        <div className="w-[600px] self-center">
+      <div className="flex flex-col w-[1200px] gap-3">
+        <div className="w-[600px] self-center h-[600px] relative">
           <Image
-            src={me}
+            src={"/me.jpeg"}
             alt={""}
             className="rounded-full mb-5 justify-center"
+            fill
           />
         </div>
-        <Heading text="Hey, I'm Steven!" />
-        {
-          "Welcome to my website! I'm currently a third-year Computer Science student at the University of British Columbia. I'm looking for Fall 2023 internship opportunities! Feel free to reach out through email (stoven@student.ubc.ca) or "
-        }
-        <a href="https://www.linkedin.com/in/stevenyuxuanshao/" target="_blank">
-          LinkedIn
-        </a>{" "}
-        to chat!
+        <Heading text="👋 Hey, I'm Steven!" />
+
+        <ul className="list-inside text-xl">
+          <li className="before:content-['💻'] before:pr-4">
+            3rd Year Computer Science{" "}
+            <a href="https://www.ubc.ca/" className="font-bold underline">
+              @UBC
+            </a>
+          </li>
+          <li className="before:content-['🛶'] before:pr-4">
+            Competitive Dragonboat with{" "}
+            <a
+              href="https://www.instagram.com/ubc.current/"
+              className="font-bold underline"
+            >
+              @UBC Current
+            </a>
+          </li>
+          <li className="before:content-['📝'] before:pr-4">
+            Open for fall 2023 internship opportunities!
+          </li>
+        </ul>
+
+        {/* <p className="text-xl">{about.aboutText}</p> */}
+
+        <div className="flex gap-5">
+          <Link
+            href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
+            text={"LinkedIn"}
+          />
+          <Link
+            href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
+            text={"Resume"}
+          />
+          <Link href={"https://github.com/stoveoveoven"} text={"Github"} />
+        </div>
       </div>
       {/* experiences */}
       <div>
