@@ -8,58 +8,66 @@ import aboutData from "../data/about.json";
 
 export default function Home() {
   const about = JSON.parse(JSON.stringify(aboutData));
+
+  const renderAboutLinks = () => {
+    return (
+      <div className="flex gap-5">
+        <Link
+          href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
+          text={"LinkedIn"}
+        />
+        <Link
+          href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
+          text={"Resume"}
+        />
+        <Link href={"https://github.com/stoveoveoven"} text={"Github"} />
+      </div>
+    );
+  };
+
+  const renderAboutDescription = () => {
+    return (
+      <ul className="list-inside text-xl">
+        <li className="before:content-['💻'] before:pr-4">
+          3rd Year Computer Science{" "}
+          <a href="https://www.ubc.ca/" className="font-bold underline">
+            @UBC
+          </a>
+        </li>
+        <li className="before:content-['🛶'] before:pr-4">
+          Competitive Dragonboat with{" "}
+          <a
+            href="https://www.instagram.com/ubc.current/"
+            className="font-bold underline"
+          >
+            @UBC Current
+          </a>
+        </li>
+        <li className="before:content-['📝'] before:pr-4">
+          Open for fall 2023 internship opportunities!
+        </li>
+      </ul>
+    );
+  };
+
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-center p-24 w-[1200px] m-auto gap-[100px] 
                  font-mono text-gray-500"
     >
       {/* about me */}
-
       <div className="flex flex-col w-[1200px] gap-3">
         <div className="w-[600px] self-center h-[600px] relative">
           <Image
             src={"/me.jpeg"}
             alt={""}
-            className="rounded-full mb-5 justify-center"
+            className="rounded-full mb-5 justify-center shadow-2xl"
             fill
           />
         </div>
         <Heading text="👋 Hey, I'm Steven!" />
-
-        <ul className="list-inside text-xl">
-          <li className="before:content-['💻'] before:pr-4">
-            3rd Year Computer Science{" "}
-            <a href="https://www.ubc.ca/" className="font-bold underline">
-              @UBC
-            </a>
-          </li>
-          <li className="before:content-['🛶'] before:pr-4">
-            Competitive Dragonboat with{" "}
-            <a
-              href="https://www.instagram.com/ubc.current/"
-              className="font-bold underline"
-            >
-              @UBC Current
-            </a>
-          </li>
-          <li className="before:content-['📝'] before:pr-4">
-            Open for fall 2023 internship opportunities!
-          </li>
-        </ul>
-
-        {/* <p className="text-xl">{about.aboutText}</p> */}
-
-        <div className="flex gap-5">
-          <Link
-            href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
-            text={"LinkedIn"}
-          />
-          <Link
-            href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
-            text={"Resume"}
-          />
-          <Link href={"https://github.com/stoveoveoven"} text={"Github"} />
-        </div>
+        {renderAboutDescription()}
+        {renderAboutLinks()}
       </div>
       {/* experiences */}
       <div>

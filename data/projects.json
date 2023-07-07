@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "id": "Personal Website",
+      "href": "https://stoveoveoven.github.io",
+      "description": "Personal website used to display and host all projects.",
+      "backgroundImage": ""
+    },
+    {
       "id": "BestBuy Auto Checkout Script",
       "href": "https://github.com/stoveoveoven/scalping",
       "description": "Basic web scraping script used to automate most of BestBuys checkout.",
@@ -10,12 +16,6 @@
       "id": "ICBC Auto Booking Script",
       "href": "https://github.com/stoveoveoven/scraping-icbc",
       "description": "Basic web scraping script to automate the booking page on ICBC.",
-      "backgroundImage": ""
-    },
-    {
-      "id": "Personal Website",
-      "href": "https://stoveoveoven.github.io",
-      "description": "Personal website used to display and host all projects.",
       "backgroundImage": ""
     },
     {
