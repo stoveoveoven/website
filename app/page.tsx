@@ -30,7 +30,11 @@ export default function Home() {
       <ul className="list-inside text-xl">
         <li className="before:content-['💻'] before:pr-4">
           3rd Year Computer Science{" "}
-          <a href="https://www.ubc.ca/" className="font-bold underline">
+          <a
+            href="https://www.ubc.ca/"
+            className="font-bold underline"
+            target="_blank"
+          >
             @UBC
           </a>
         </li>
@@ -38,6 +42,7 @@ export default function Home() {
           Competitive Dragonboat with{" "}
           <a
             href="https://www.instagram.com/ubc.current/"
+            target="_blank"
             className="font-bold underline"
           >
             @UBC Current
