@@ -17,19 +17,22 @@ export const Project = (props: ProjectProps) => {
 
   return (
     <a
-      className="relative bg-gray-100 bg-opacity-60 rounded-xl p-7 flex gap-3 shadow-lg w-[1200px] h-[300px] items-center hover:bg-gray-100 hover:bg-opacity-90 duration-200 cursor-pointer"
+      className="relative bg-gray-100 bg-opacity-70 rounded-xl flex gap-3 shadow-lg w-[1200px] h-[300px] items-center hover:bg-gray-100 hover:bg-opacity-90 duration-200 cursor-pointer"
       onMouseEnter={() => setFocused(true)}
       onMouseLeave={() => setFocused(false)}
       href={props.href}
       target="_blank"
     >
-      <Image
-        src={props.backgroundImage}
-        alt={""}
-        fill
-        className="-z-10 object-cover rounded-xl"
-      />
-      <div className="flex flex-col gap-2 grow justify-center">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="rounded-xl object-cover absolute w-full h-full -z-10"
+      >
+        <source src={props.backgroundVideo} type="video/mp4" />
+      </video>
+      <div className="flex flex-col gap-2 grow justify-center p-7">
         <h1
           className={`text-5xl uppercase font-bold duration-200 
         ${moveTitleUpAnimation}`}

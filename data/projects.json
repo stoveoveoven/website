@@ -4,31 +4,31 @@
       "id": "Personal Website",
       "href": "https://stoveoveoven.github.io",
       "description": "Personal website used to display and host all projects.",
-      "backgroundImage": "/backgrounds/website.gif"
+      "backgroundVideo": "/backgrounds/website.mp4"
     },
     {
       "id": "BestBuy Auto Checkout Script",
       "href": "https://github.com/stoveoveoven/scalping",
       "description": "Basic web scraping script used to automate most of BestBuys checkout.",
-      "backgroundImage": "/backgrounds/bestbuy.gif"
+      "backgroundVideo": "/backgrounds/bestbuy.mp4"
     },
     {
       "id": "ICBC Auto Booking Script",
       "href": "https://github.com/stoveoveoven/scraping-icbc",
       "description": "Basic web scraping script to automate the booking page on ICBC.",
-      "backgroundImage": "/backgrounds/icbc.gif"
+      "backgroundVideo": "/backgrounds/icbc.mp4"
     },
     {
       "id": "Circuit Design with Verilog",
       "href": "https://github.com/stoveoveoven/circuit-design-with-verilog",
       "description": "Code used for the completion of CPEN 211.",
-      "backgroundImage": "/backgrounds/verilog.gif"
+      "backgroundVideo": "/backgrounds/verilog.mp4"
     },
     {
       "id": "WIP",
       "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       "description": "WIP",
-      "backgroundImage": ""
+      "backgroundVideo": ""
     }
   ]
 }

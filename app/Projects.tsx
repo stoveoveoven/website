@@ -23,7 +23,7 @@ export const Projects = () => {
               id={project.id}
               href={project.href}
               description={project.description}
-              backgroundImage={project.backgroundImage}
+              backgroundVideo={project.backgroundVideo}
             />
           );
         })
@@ -35,7 +35,7 @@ export const Projects = () => {
   }, [numRenderedProjects]);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6">
       {renderedProjects}
 
       <div className="flex justify-center relative">
