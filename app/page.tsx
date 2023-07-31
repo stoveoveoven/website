@@ -16,10 +16,7 @@ export default function Home() {
           href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
           text={"LinkedIn"}
         />
-        <Link
-          href={"https://www.linkedin.com/in/stevenyuxuanshao/"}
-          text={"Resume"}
-        />
+        <Link href={"/resume.pdf"} text={"Resume"} />
         <Link href={"https://github.com/stoveoveoven"} text={"Github"} />
       </div>
     );
