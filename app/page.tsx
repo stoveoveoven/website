@@ -54,11 +54,11 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center p-24 w-[1200px] m-auto gap-[100px] 
+      className="flex min-h-screen flex-col items-center justify-center p-24 w-[700px] xl:w-[1200px] m-auto gap-[100px] 
                  font-mono text-gray-500"
     >
       {/* about me */}
-      <div className="flex flex-col w-[1200px] gap-3">
+      <div className="flex flex-col w-[600px] xl:w-[1200px] gap-3">
         <div className="w-[600px] self-center h-[600px] relative">
           <Image
             src={"/me.jpeg"}
@@ -72,12 +72,12 @@ export default function Home() {
         {renderAboutLinks()}
       </div>
       {/* experiences */}
-      <div>
+      <div className="w-[600px] xl:w-[1200px]">
         <Heading text={"Experience"} />
         <Experiences />
       </div>
       {/* projects */}
-      <div>
+      <div className="w-[600px] xl:w-[1200px]">
         <Heading text="Projects" />
         <Projects />
       </div>

@@ -3,21 +3,35 @@
 import { ProjectProps } from "@/types/types";
 import Image from "next/image";
 import placeholder from "../assets/placeholder.gif";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Project = (props: ProjectProps) => {
   const [focused, setFocused] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const isMobile = windowSize < 1280;
+  const exploreButtonAnimation =
+    focused && !isMobile ? "pr-[24px] pl-[8px] bg-red-300" : "";
+  const arrowAnimation =
+    focused && !isMobile
+      ? "opacity-100 right-[23px]"
+      : "opacity-0 right-[27px]";
+  const showDescriptionAnimation =
+    focused && !isMobile ? "after:opacity-100" : "";
+  const moveTitleUpAnimation = focused && !isMobile ? "mb-[40px]" : "";
 
-  const exploreButtonAnimation = focused ? "pr-[24px] pl-[8px] bg-red-300" : "";
-  const arrowAnimation = focused
-    ? "opacity-100 right-[23px]"
-    : "opacity-0 right-[27px]";
-  const showDescriptionAnimation = focused ? "after:opacity-100" : "";
-  const moveTitleUpAnimation = focused ? "mb-[40px]" : "";
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        setWindowSize(window.innerWidth);
+      },
+      false
+    );
+  }, []);
 
   return (
     <a
-      className="relative bg-gray-100 bg-opacity-70 rounded-xl flex gap-3 shadow-lg w-[1200px] h-[300px] items-center hover:bg-gray-100 hover:bg-opacity-90 duration-200 cursor-pointer"
+      className="relative bg-gray-100 bg-opacity-70 rounded-xl flex gap-3 shadow-lg h-[300px] items-center hover:bg-gray-100 hover:bg-opacity-90 duration-200 cursor-pointer"
       onMouseEnter={() => setFocused(true)}
       onMouseLeave={() => setFocused(false)}
       href={props.href}
@@ -42,7 +56,7 @@ export const Project = (props: ProjectProps) => {
         <div
           data-text={props.description}
           className={`text-2xl duration-200 inline-block absolute pt-2
-          after:content-[attr(data-text)] after:absolute after:opacity-0 after:duration-200 w-[1200px] h-[50px] 
+          after:content-[attr(data-text)] after:absolute after:opacity-0 after:duration-200 w-[600px] xl:w-[1200px] h-[50px] 
           ${showDescriptionAnimation}`}
         ></div>
         <div className="">
