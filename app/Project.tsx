@@ -8,13 +8,12 @@ import { useState } from "react";
 export const Project = (props: ProjectProps) => {
   const [focused, setFocused] = useState(false);
 
-  const exploreButtonAnimation = focused
-    ? "pr-[24px] pl-[8px] bg-red-300 after:opacity-100 after:right-[18px]"
-    : "";
-
+  const exploreButtonAnimation = focused ? "pr-[24px] pl-[8px] bg-red-300" : "";
+  const arrowAnimation = focused
+    ? "opacity-100 right-[23px]"
+    : "opacity-0 right-[27px]";
   const showDescriptionAnimation = focused ? "after:opacity-100" : "";
   const moveTitleUpAnimation = focused ? "mb-[40px]" : "";
-  const grayTintAnimation = focused ? "" : "";
 
   return (
     <a
@@ -45,11 +44,15 @@ export const Project = (props: ProjectProps) => {
         ></div>
         <div className="">
           <button
-            className={`text-xl uppercase bg-blue-200 rounded-lg py-2 w-[150px] delay-200 duration-200 inline-block relative 
-          after:content-['→'] after:absolute after:opacity-0 after:duration-200 after:delay-200 after:right-[30px]
+            className={`text-xl uppercase bg-blue-200 rounded-lg py-2 w-[150px] delay-200 duration-200 inline-block relative
             ${exploreButtonAnimation} `}
           >
             Explore
+            <span
+              className={`absolute duration-200 delay-200 ${arrowAnimation}`}
+            >
+              →
+            </span>
           </button>
         </div>
       </div>
