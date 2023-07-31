@@ -9,7 +9,7 @@ export const Project = (props: ProjectProps) => {
   const [focused, setFocused] = useState(false);
 
   const exploreButtonAnimation = focused
-    ? "pr-[24px] pl-[8px] bg-red-300 after:opacity-100 after:right-[19px]"
+    ? "pr-[24px] pl-[8px] bg-red-300 after:opacity-100 after:right-[18px]"
     : "";
 
   const showDescriptionAnimation = focused ? "after:opacity-100" : "";
