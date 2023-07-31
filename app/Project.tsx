@@ -9,7 +9,7 @@ export const Project = (props: ProjectProps) => {
   const [focused, setFocused] = useState(false);
 
   const exploreButtonAnimation = focused
-    ? "pr-[24px] pl-[8px] bg-red-300 after:opacity-100 after:right-[20px]"
+    ? "pr-[24px] pl-[8px] bg-red-300 after:opacity-100 after:right-[19px]"
     : "";
 
   const showDescriptionAnimation = focused ? "after:opacity-100" : "";
@@ -18,12 +18,18 @@ export const Project = (props: ProjectProps) => {
 
   return (
     <a
-      className="bg-gray-100 rounded-xl p-7 flex gap-3 shadow-lg w-[1200px] h-[300px] items-center hover:bg-slate-200 duration-200 cursor-pointer"
+      className="relative bg-gray-100 bg-opacity-60 rounded-xl p-7 flex gap-3 shadow-lg w-[1200px] h-[300px] items-center hover:bg-gray-100 hover:bg-opacity-90 duration-200 cursor-pointer"
       onMouseEnter={() => setFocused(true)}
       onMouseLeave={() => setFocused(false)}
       href={props.href}
       target="_blank"
     >
+      <Image
+        src={props.backgroundImage}
+        alt={""}
+        fill
+        className="-z-10 object-cover rounded-xl"
+      />
       <div className="flex flex-col gap-2 grow justify-center">
         <h1
           className={`text-5xl uppercase font-bold duration-200 

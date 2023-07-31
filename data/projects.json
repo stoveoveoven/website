@@ -4,43 +4,25 @@
       "id": "Personal Website",
       "href": "https://stoveoveoven.github.io",
       "description": "Personal website used to display and host all projects.",
-      "backgroundImage": ""
+      "backgroundImage": "/backgrounds/website.gif"
     },
     {
       "id": "BestBuy Auto Checkout Script",
       "href": "https://github.com/stoveoveoven/scalping",
       "description": "Basic web scraping script used to automate most of BestBuys checkout.",
-      "backgroundImage": ""
+      "backgroundImage": "/backgrounds/bestbuy.gif"
     },
     {
       "id": "ICBC Auto Booking Script",
       "href": "https://github.com/stoveoveoven/scraping-icbc",
       "description": "Basic web scraping script to automate the booking page on ICBC.",
-      "backgroundImage": ""
+      "backgroundImage": "/backgrounds/icbc.gif"
     },
     {
       "id": "Circuit Design with Verilog",
       "href": "https://github.com/stoveoveoven/circuit-design-with-verilog",
       "description": "Code used for the completion of CPEN 211.",
-      "backgroundImage": ""
-    },
-    {
-      "id": "Document Analysis Tool",
-      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Plagiarism Checker created in CPEN 221.",
-      "backgroundImage": ""
-    },
-    {
-      "id": "Email Analysis",
-      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Using Graphs to model the network of emails in a large organization.",
-      "backgroundImage": ""
-    },
-    {
-      "id": "Wikipedia Mediator",
-      "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Using the Wikipedia Mediator API to find shortest path between two articles.",
-      "backgroundImage": ""
+      "backgroundImage": "/backgrounds/verilog.gif"
     },
     {
       "id": "WIP",
