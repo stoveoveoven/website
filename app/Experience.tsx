@@ -15,7 +15,7 @@ export const Experience = (props: ExperienceProps) => {
         setIsHovered(false);
       }}
     >
-      <div className="flex justify-center cursor-pointer">
+      <div className="flex justify-center">
         <div className="flex relative">
           <div className="w-3 bg-gray-500"></div>
           <label
@@ -32,9 +32,13 @@ export const Experience = (props: ExperienceProps) => {
             <div className="text-2xl font-bold uppercase">{props.jobTitle}</div>
             <div className="text-xl">{props.description}</div>
           </div>
-          <div className="relative w-[80px] h-[80px] shadow-xl ">
-            <Image src={props.logo} alt={""} fill className="rounded-xl" />
-          </div>
+          <Image
+            src={props.logo}
+            alt={""}
+            width={80}
+            height={80}
+            className="rounded-xl object-fill shadow-xl"
+          />
         </div>
       </div>
     </div>

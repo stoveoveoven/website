@@ -23,6 +23,20 @@
 
 body {
   /* background-color: antiquewhite; */
-  background-color: #d5cede;
   background-image: url("../public/topography.svg");
+  background-color: #d5cede;
+  animation: fadeInAnimation ease 2.5s;
+  opacity: 0;
+  animation-delay: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

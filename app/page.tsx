@@ -54,22 +54,26 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center p-24 w-[700px] xl:w-[1200px] m-auto gap-[100px] 
-                 font-mono text-gray-500"
+      className={`flex min-h-screen flex-col items-center justify-center w-[700px] xl:w-[1200px] m-auto gap-[100px] 
+                 font-mono text-gray-500`}
     >
       {/* about me */}
-      <div className="flex flex-col w-[600px] xl:w-[1200px] gap-3">
-        <div className="w-[600px] self-center h-[600px] relative">
-          <Image
-            src={"/me.jpeg"}
-            alt={""}
-            className="rounded-full mb-5 justify-center shadow-2xl"
-            fill
-          />
+      <div className="flex  w-[600px] xl:w-[1200px] h-screen items-center justify-center">
+        <div className="flex flex-col gap-10">
+          <div className="w-[600px] self-center h-[600px] relative">
+            <Image
+              src={"/me.jpeg"}
+              alt={""}
+              className="rounded-full mb-5 justify-center shadow-2xl"
+              fill
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <Heading text="👋 Hey, I'm Steven!" />
+            {renderAboutDescription()}
+            {renderAboutLinks()}
+          </div>
         </div>
-        <Heading text="👋 Hey, I'm Steven!" />
-        {renderAboutDescription()}
-        {renderAboutLinks()}
       </div>
       {/* experiences */}
       <div className="w-[600px] xl:w-[1200px]">
