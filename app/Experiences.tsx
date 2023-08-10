@@ -1,10 +1,10 @@
 import { Experience } from "./Experience";
 import { ExperienceList } from "@/types/types";
 
-import jobs from "../data/jobs.json";
+import data from "../data/experiences.json";
 
 export const Experiences = () => {
-  const experiences: ExperienceList = JSON.parse(JSON.stringify(jobs));
+  const experiences: ExperienceList = JSON.parse(JSON.stringify(data));
   return (
     <div className="">
       {experiences.companies.map((experience) => {
