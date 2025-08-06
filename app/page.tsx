@@ -26,7 +26,7 @@ export default function Home() {
     return (
       <ul className="list-inside text-xl">
         <li className="before:content-['💻'] before:pr-4">
-          3rd Year Computer Science{" "}
+          Computer Science{" "}
           <a
             href="https://www.ubc.ca/"
             className="font-bold underline"
@@ -38,15 +38,15 @@ export default function Home() {
         <li className="before:content-['🛶'] before:pr-4">
           Competitive Dragonboat with{" "}
           <a
-            href="https://www.instagram.com/ubc.current/"
+            href="https://www.instagram.com/juicedragonboat/"
             target="_blank"
             className="font-bold underline"
           >
-            @UBC Current
+            @juicedragonboat
           </a>
         </li>
         <li className="before:content-['📝'] before:pr-4">
-          Open for fall 2023 internship opportunities!
+          Open for Jan 2026 internship opportunities!
         </li>
       </ul>
     );

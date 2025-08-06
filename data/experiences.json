@@ -1,6 +1,14 @@
 {
   "companies": [
     {
+      "company": "Visier Inc",
+      "startDate": "Jan 2024",
+      "endDate": "Aug 2024",
+      "jobTitle": "Software Developer",
+      "description": "Full Stack developer - Implemented safeguards, revamped legacy designs",
+      "logo": "/experiences/visier.jpg"
+    },
+    {
       "company": "Ensemble Systems",
       "startDate": "May 2022",
       "endDate": "Dec 2022",
