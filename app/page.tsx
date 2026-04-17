@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center w-full max-w-[700px] xl:max-w-[1200px] mx-auto gap-[100px] font-mono text-gray-500 px-16"
+      className="flex min-h-screen flex-col items-center justify-center w-full max-w-[700px] xl:max-w-[1200px] mx-auto gap-[100px] font-mono text-gray-500 px-16 min-w-[460px]"
     >
       {/* about me */}
       <div className="flex w-full max-w-[600px] xl:max-w-[1200px] pt-16 items-center justify-center">

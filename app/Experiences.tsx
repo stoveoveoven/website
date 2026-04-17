@@ -6,7 +6,7 @@ import data from "../data/experiences.json";
 export const Experiences = () => {
   const experiences: ExperienceList = JSON.parse(JSON.stringify(data));
   return (
-    <div className="">
+    <div className="min-w-[460px]">
       {experiences.companies.map((experience) => {
         return (
           <Experience
