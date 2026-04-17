@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 
 export const Project = (props: ProjectProps) => {
   const [focused, setFocused] = useState(false);
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const width = typeof window !== "undefined" ? window.innerWidth : 0;
+  const [windowSize, setWindowSize] = useState(width);
   const isMobile = windowSize < 1280;
   const exploreButtonAnimation =
     focused && !isMobile ? "pr-[24px] pl-[8px] bg-red-300" : "";
@@ -19,6 +20,7 @@ export const Project = (props: ProjectProps) => {
     focused && !isMobile ? "after:opacity-100" : "";
   const moveTitleUpAnimation = focused && !isMobile ? "mb-[40px]" : "";
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     window.addEventListener(
       "resize",
