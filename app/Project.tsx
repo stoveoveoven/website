@@ -56,7 +56,7 @@ export const Project = (props: ProjectProps) => {
         <div
           data-text={props.description}
           className={`text-2xl duration-200 inline-block absolute pt-2
-          after:content-[attr(data-text)] after:absolute after:opacity-0 after:duration-200 w-[600px] xl:w-[1200px] h-[50px] 
+          after:content-[attr(data-text)] after:absolute after:opacity-0 after:duration-200 w-full xl:w-[1200px] h-[50px] 
           ${showDescriptionAnimation}`}
         ></div>
         <div className="">

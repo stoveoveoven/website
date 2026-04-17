@@ -46,7 +46,7 @@ export default function Home() {
           </a>
         </li>
         <li className="before:content-['📝'] before:pr-4">
-          Open for Jan 2026 internship opportunities!
+          Open for Aug 2026 opportunities!
         </li>
       </ul>
     );
@@ -54,17 +54,16 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-center w-[700px] xl:w-[1200px] m-auto gap-[100px] 
-                 font-mono text-gray-500`}
+      className="flex min-h-screen flex-col items-center justify-center w-full max-w-[700px] xl:max-w-[1200px] mx-auto gap-[100px] font-mono text-gray-500 px-16"
     >
       {/* about me */}
-      <div className="flex  w-[600px] xl:w-[1200px] h-screen items-center justify-center">
+      <div className="flex w-full max-w-[600px] xl:max-w-[1200px] pt-16 items-center justify-center">
         <div className="flex flex-col gap-10">
-          <div className="w-[600px] self-center h-[600px] relative">
+          <div className="w-full max-w-[600px] self-center aspect-square relative">
             <Image
-              src={"/me.jpeg"}
+              src={"/me.png"}
               alt={""}
-              className="rounded-full mb-5 justify-center shadow-2xl"
+              className="rounded-full mb-5 justify-center shadow-2xl object-cover"
               fill
             />
           </div>
@@ -76,12 +75,12 @@ export default function Home() {
         </div>
       </div>
       {/* experiences */}
-      <div className="w-[600px] xl:w-[1200px]">
+      <div className="w-full max-w-[600px] xl:max-w-[1200px]">
         <Heading text={"Experience"} />
         <Experiences />
       </div>
       {/* projects */}
-      <div className="w-[600px] xl:w-[1200px]">
+      <div className="w-full max-w-[600px] xl:max-w-[1200px]">
         <Heading text="Projects" />
         <Projects />
       </div>

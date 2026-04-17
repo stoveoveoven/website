@@ -1,6 +1,14 @@
 {
   "companies": [
     {
+      "company": "Dialpad",
+      "startDate": "Jan 2026",
+      "endDate": "Aug 2026",
+      "jobTitle": "Software Developer",
+      "description": "Frontend developer - Vue + BackboneJS",
+      "logo": "/experiences/dialpad.jpeg"
+    },
+    {
       "company": "Visier Inc",
       "startDate": "Jan 2024",
       "endDate": "Aug 2024",
